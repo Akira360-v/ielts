@@ -1,0 +1,163 @@
+/*Header*/
+.header
+    position: relative
+    background: #2e2e2e url(../img/header/bg.png) center center no-repeat
+    // display: none
+    overflow: hidden
+.girl
+    position: relative
+    &::after
+        position: absolute
+        background: url(../img/header/Brightness_Contrast_2.png) no-repeat right
+        top: 0
+        right: 5px
+        left: 0
+        bottom: -144px
+        content: ''
+        z-index: 5
+        // display: none
+    &::before
+        position: absolute
+        top: -450px
+        right: -950px
+        content: ''
+        width: 1600px
+        height: 1600px
+        background: rgba(0, 255, 255, 0.52)
+        border-radius: 55% 0 0 55%
+        z-index: 2
+.header__title-box-top
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 15px 0
+    border-bottom: 1px solid #545151
+    padding-bottom: 21px
+    position: relative
+.header__title-block
+    display: flex
+    &:nth-last-child(1) 
+        position: relative
+        z-index: 99
+.header__title-img
+    & img
+        &:nth-last-child(1)
+            border-left: 1px outset #3e3a3b
+            padding-left: 20px
+            margin-left: 19px
+.header__nav-top
+    font-family: 'Roboto_Regular'
+    color: #b9e8e9
+    display: flex
+    margin-top: 5px
+    text-transform: uppercase
+    align-items: center
+.header__nav-bottom
+    position: relative
+    z-index: 99
+.header__nav-sity
+    display: flex
+    align-items: center
+    font-size: 14px
+    letter-spacing: 0.03rem
+    position: relative
+    & span
+        position: absolute
+        right: -17px
+        top: 1px
+        font-size: 9px
+        margin: 0 3px
+.header__nav-number
+    display: flex
+    align-items: center
+    font-size: 15px
+    color: #fff
+    position: relative
+    & span
+        // position: absolute
+        left: -29px
+        color: #d0112b
+        font-size: 21px
+.header__title-block-bottom
+    display: flex
+    justify-content: space-between
+    margin-top: 20px
+    position: relative
+    z-index: 9
+.header__nav-bottom
+    font-family: 'ProximaNova_Regular'
+    font-size: 14px
+    color: #b9e8e9
+    display: flex
+    // margin-top: 10px
+.header__nav-block
+    margin-left: 65px
+    font-size: 14px
+    text-transform: uppercase
+    position: relative
+    & span
+        position: absolute
+        right: -17px
+        top: 3px
+        font-size: 9px
+        margin: 0 3px
+.header__content-block
+    margin-top: 143px
+    font-size: 3.6rem
+    font-family: 'ProximaNova_Black'
+    line-height: 47px
+    letter-spacing: 0.07em
+.header__content-col
+    margin-top: 38px
+    letter-spacing: 0.03em
+.header__content-group
+    margin-top: 23px
+    font-size: 1.8rem
+    font-family: 'OpenSans_Regular'
+    align-items: center
+    display: flex
+    &::before
+        content: ''
+        width: 11px
+        height: 11px
+        margin-right: 16px
+        background-color: #99ca3b
+        border-radius: 50%
+.header__content-button
+    margin-top: 60px
+    // margin-bottom: 200px
+    padding-bottom: 240px
+    & button
+        padding: 12px 33px
+        align-items: center
+        border-radius: 50px
+        margin-right: 25px
+        font-family: 'OpenSans_Regular'
+        font-size: 1.8rem
+        border: none
+        outline: none
+        &:nth-last-child(2)
+            background: #e51836
+        &:nth-last-child(1)
+            background: #3f3b3c
+.nav-pading
+    margin-left: 65px
+.header__nav-button
+    & a
+        position: relative
+        &:active
+            color: #000
+        &:nth-last-child(2)
+            
+            padding: 5px 5px 5px 20px
+            background: #26b5a4
+            border-radius: 25px 0 0 25px
+            color: #b9e8e9        
+        &:nth-last-child(1)
+            
+            padding: 5px 20px 5px 5px
+            background: #26b5a4
+            color: #b9e8e9
+            border-radius: 0 25px 25px 0
+.is-active 
+    background-color: #516666 !important  
